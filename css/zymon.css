@@ -4,3 +4,20 @@
     float: left;
     margin-left: 0px;
 }
+
+.row{
+    margin: auto;
+    width: 100%;
+    text-align: left;
+}
+
+.row1{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+.row2{
+    margin: auto;
+    width: 0%;
+    text-align: right;
+}
