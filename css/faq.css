@@ -1,0 +1,138 @@
+.bg_size{
+    width: 75px;
+    cursor: pointer;
+    float: left;
+    margin-left: 0px;
+}
+
+.row{
+    margin: auto;
+    width: 100%;
+    text-align: left;
+}
+
+.row1{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+.row2{
+    margin: auto;
+    width: 0%;
+    text-align: right;
+}
+
+
+
+
+@keyframes slideInTop {
+    from {
+      transform: translateY(100px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+.question h1{
+    position: inherit;
+    padding-top: 100px;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 800;
+    color: #780000;
+
+    animation-name: slideInTop;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+}
+
+.container1 {
+    margin: 0 150px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.container1 .tab {
+    position: relative;
+    background-color: aliceblue;
+    padding: 0 20px 20px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    overflow: hidden;
+
+    animation-name: slideInTop;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.5s;
+}
+.container1 .tab input {
+    appearance: none;
+}
+.container1 .tab label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.container1 .tab label::after {
+    content: '+';
+    position: absolute;
+    right: 20px;
+    font-size: 30px;
+    color: rgba(0,0,0,0.1);
+    transition: transform 1s;
+}
+.container1 .tab:hover label::after {
+    color: #333;
+}
+.container1 .tab input:checked ~ label::after {
+    transform: rotate(135deg);
+}
+.container1 .tab label h2 {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    font-weight: 500;
+    font-size: 1.25em;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.container1 .tab:nth-child(1) label h2 {
+    background: linear-gradient(135deg, #fdff6b, #f6fa02);
+}
+.container1 .tab:nth-child(2) label h2 {
+    background: linear-gradient(135deg, #fdff6b, #f6fa02);
+}
+.container1 .tab:nth-child(3) label h2 {
+    background: linear-gradient(135deg, #fdff6b, #f6fa02);
+}
+.container1 .tab:nth-child(4) label h2 {
+    background: linear-gradient(135deg, #fdff6b, #f6fa02);
+}
+.container1 .tab label h3 {
+    position: relative;
+    font-weight: 500;
+    font-size: 1.3em;
+    color: black;
+    z-index: 10;
+}
+.container1 .tab .content {
+    max-height: 0;
+    transition: 1s;
+    overflow: hidden;
+}
+.container1 .tab input:checked ~ .content {
+    max-height:  100vh;
+}
+.container1 .tab .content p {
+    position: relative;
+    padding: 10px 0;
+    color: #333;
+    z-index: 10;
+    margin-left: 50px;
+}
