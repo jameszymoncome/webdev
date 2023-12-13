@@ -57,42 +57,26 @@
 
 
 <style>
-
     body {
       background-color: #2b98f0;
-      margin: 0; /* Remove default body margin */
-      padding: 0; /* Remove default body padding */
+      margin: 0;
+      padding: 0;
     }
 
-    /* Style for the container */
-    .white-box {
-      width: 300px;
-      padding: 20px;
-      background-color: #f3e53d;
-      border: 2px solid #f70707;
-      margin: 25px 20%; /* Center the box horizontally with auto margin */
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-    }
-
-    .white-box1 {
-      width: 300px;
-      padding: 20px;
-      background-color: #f3e53d;
-      border: 2px solid #f70707;
-      margin: 25px 20%; /* Center the box horizontally with auto margin */
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-    }
-
+    .white-box,
+    .white-box1,
     .white-box2 {
-      width: 300px;
+      display: flex;
+      justify-content: space-between; /* Add space between text and image */
+      align-items: center;
+      width: 60%; /* Adjust the width of the boxes */
       padding: 20px;
       background-color: #f3e53d;
       border: 2px solid #f70707;
-      margin: 25px 20%; /* Center the box horizontally with auto margin */
+      margin: 25px auto; /* Center the box horizontally with auto margin */
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
     }
 
-    /* Style for the text inside the box */
     .box-text {
       color: #0b0b0b;
       font-size: 20px;
@@ -100,37 +84,48 @@
       font-family: sans-serif;
     }
 
-  </style>
+    .box-img {
+      max-width: 100%;
+      height: auto;
+      margin-left: 20px; /* Adjust the margin between text and image */
+    }
+</style>
 
 <div class="white-box">
-    <!-- Text inside the box -->
-    <p class="box-text"><p>
-        <b>October 20, 2023</b>
-    </p>
-    <p>
-        CNSC Emergency Response Team become a newly accredited organization 
-    </p></p>
-  </div>
+    <div>
+        <p class="box-text">
+            <b>October 20, 2023</b>
+        </p>
+        <p>
+            CNSC Emergency Response Team become a newly accredited organization
+        </p>
+    </div>
+    <img class="box-img" src="achievement1.jpg" alt="Image1">
+</div>
 
-  <div class="white-box1">
-    <!-- Text inside the box -->
-    <p class="box-text"><p>
-      <b>October 16-18, 2023</b>
-    </p>
-    <p>
-        CNSC ERT volunteered on PASIKLABAN 2023: The CNSC Intercollegiate Meet
-    </p></p>
-  </div>
+<div class="white-box1">
+    <div>
+        <p class="box-text">
+            <b>October 16-18, 2023</b>
+        </p>
+        <p>
+            CNSC ERT volunteered on PASIKLABAN 2023: The CNSC Intercollegiate Meet
+        </p>
+    </div>
+    <img class="box-img" src="image2.jpg" alt="Image2">
+</div>
 
-  <div class="white-box2">
-    <!-- Text inside the box -->
-    <p class="box-text"><p>
-      <b>December 01, 2023</b>
-    </p>
-    <p>
-        6th mobile blood donation drive of 2023 with Theme: “Be There for someone else. Give blood. Share life” held at CNSC CAS Room 113, 114 and 115. 
-    </p></p>
-  </div>
+<div class="white-box2">
+    <div>
+        <p class="box-text">
+            <b>December 01, 2023</b>
+        </p>
+        <p>
+            6th mobile blood donation drive of 2023 with Theme: “Be There for someone else. Give blood. Share life” held at CNSC CAS Room 113, 114, and 115.
+        </p>
+    </div>
+    <img class="box-img" src="achievement3.jpg" alt="Image3">
+</div>
 
 <body>
   <section class="ftco-section ftco-intro" style="background-image: url('images/response\ team.jpg');" data-stellar-background-ratio="0.5">
